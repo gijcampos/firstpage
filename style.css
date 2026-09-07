@@ -1,0 +1,140 @@
+:root {
+    --bg-color: #fdf4f4;
+    --text-color: #333; 
+    --surface: #ffffff;
+    --surface-alt: #fbe7e9;
+    --ink: #26202b; 
+    --ink-muted: #6e6577;
+    --accent: #d6486b;
+    --accent-hover: #b33252;
+    --teal: #1f6f6b;
+    --border-color: #f0dbdd;
+
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'Times New Roman', serif;
+
+    --radius-sm: 8px;
+    --radius-lg: 16px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 30px 10px;
+}
+
+table {
+    background-color: var(--surface);
+    border-radius: var(--radius-lg);
+    border-collapse: collapse;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+td {
+    padding: 15px;
+}
+
+font{
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}    
+
+nav a {
+    text-decoration: none;
+    color: var(--ink);
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    background-color: var(--surface-alt);
+    border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent);
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+a {
+    color: var(--accent);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--teal);
+    outline-offset: 3px;
+}
+
+h1 {
+    font-family: var(--font-display);
+    color: var(--ink);
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-family: var(--font-display);
+    color: var(--ink);
+    font-size: 1.25rem;
+    border-bottom: 2px solid var(--surface-alt);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+p {
+    margin: 0 0 1rem;
+    max-width: 62ch;
+    color: var(--ink);
+}
+
+ul  {
+    margin: 0 0 1rem 20px;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    color: var(--accent);
+}
